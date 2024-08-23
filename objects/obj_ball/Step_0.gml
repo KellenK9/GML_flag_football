@@ -40,7 +40,17 @@ else{
 }
 
 if(global.offense_caught){
-	x = global.offensive_player_caught.x + x_offset
-	y = global.offensive_player_caught.y + y_offset
-	image_angle = angle
+	if(not global.offensive_player_caught.tackled){
+		x = global.offensive_player_caught.x + x_offset
+		y = global.offensive_player_caught.y + y_offset
+		image_angle = angle
+	}
+}
+
+if(global.defense_caught){
+	if(not global.defensive_player_caught.tackled){
+		x = global.defensive_player_caught.x + x_offset
+		y = global.defensive_player_caught.y + y_offset
+		image_angle = angle
+	}
 }
