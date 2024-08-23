@@ -34,8 +34,10 @@
   },
   "name":"flag_football",
   "resources":[
+    {"id":{"name":"fnt_1","path":"fonts/fnt_1/fnt_1.yy",},},
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_player_defense","path":"objects/obj_player_defense/obj_player_defense.yy",},},
     {"id":{"name":"obj_player_offense","path":"objects/obj_player_offense/obj_player_offense.yy",},},
     {"id":{"name":"obj_player_quarterback","path":"objects/obj_player_quarterback/obj_player_quarterback.yy",},},

@@ -13,7 +13,7 @@ if(global.pass_thrown){
 		}
 	}
 }
-if(global.offense_caught){
+if(global.offense_caught and not tackled){
 	if(ball_caught){
 		y = y - player_speed
 	}
