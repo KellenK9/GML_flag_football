@@ -18,3 +18,10 @@ if(global.offense_caught and not tackled and not global.touchdown){
 		y = y - player_speed
 	}
 }
+
+if(keyboard_check(vk_shift) and not global.pass_thrown){
+	display_route = true
+}
+else{
+	display_route = false
+}

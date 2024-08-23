@@ -3,6 +3,10 @@
 line_of_scrimmage = 20
 pixels_per_yard = 9
 goal_line_y = 985
+draw_throw_indicator = false
+alarm[0] = -1
+throw_indicator_duration = 30
+initial_pass_thrown = false
 
 defender_yards_off_scrimmage_1 = 20
 defender_yards_off_scrimmage_2 = 60

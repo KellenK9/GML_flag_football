@@ -54,6 +54,7 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_scrimmage_2","path":"sprites/spr_scrimmage_2/spr_scrimmage_2.yy",},},
     {"id":{"name":"spr_scrimmage","path":"sprites/spr_scrimmage/spr_scrimmage.yy",},},
+    {"id":{"name":"spr_throw_indicator","path":"sprites/spr_throw_indicator/spr_throw_indicator.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

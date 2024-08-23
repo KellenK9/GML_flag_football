@@ -12,3 +12,15 @@ if(global.offense_caught){
 		}
 	}
 }
+
+if(global.pass_thrown){
+	if(initial_pass_thrown = false){
+		draw_throw_indicator = true
+	}
+	initial_pass_thrown = true
+	if(draw_throw_indicator){
+		if(alarm[0] < 0){
+			alarm[0] = throw_indicator_duration
+		}
+	}
+}
