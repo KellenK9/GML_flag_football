@@ -2,8 +2,8 @@
 
 depth = -10
 
-x_original_offset = 14
-y_original_offset = 5
+x_original_offset = 7
+y_original_offset = 0
 angle_original = 105
 
 horizontal_sway = 1
@@ -31,3 +31,5 @@ alarm[2] = angle_sway_frames
 
 global.pass_caught = false
 global.hit_ground = false
+global.offense_caught = false
+global.defense_caught = false
