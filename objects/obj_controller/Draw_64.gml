@@ -9,9 +9,9 @@ if(global.hit_ground){
 }
 
 if(global.offense_caught){
-	draw_text(760, 800, "Reception")
+	draw_text(780, 800, "Reception")
 }
 
 if(global.defense_caught){
-	draw_text(720, 800, "Interception")
+	draw_text(750, 800, "Interception")
 }
