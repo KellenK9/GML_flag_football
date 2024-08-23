@@ -28,3 +28,6 @@ angle = angle_original
 alarm[0] = horizontal_sway_frames
 alarm[1] = vertical_sway_frames
 alarm[2] = angle_sway_frames
+
+global.pass_caught = false
+global.hit_ground = false
