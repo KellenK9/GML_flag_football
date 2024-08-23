@@ -1,5 +1,8 @@
 /// @desc Initialize
 total_scale = 6
+if(room = room_field_big){
+	total_scale = 4
+}
 
 view_width=1920/total_scale
 view_height=1080/total_scale

@@ -2,6 +2,8 @@
 
 depth = -10
 
+endzone_pixels = 105
+
 x_original_offset = 7
 y_original_offset = 0
 angle_original = 105
@@ -33,3 +35,4 @@ global.pass_caught = false
 global.hit_ground = false
 global.offense_caught = false
 global.defense_caught = false
+global.touchdown = false

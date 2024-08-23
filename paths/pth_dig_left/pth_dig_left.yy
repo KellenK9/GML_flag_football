@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_dig_left",
+  "closed":false,
+  "kind":0,
+  "name":"pth_dig_left",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":447.06094,"y":251.34961,},
+    {"speed":100.0,"x":447.06094,"y":141.38213,},
+    {"speed":100.0,"x":95.02846,"y":139.7561,},
+    {"speed":100.0,"x":63.32114,"y":111.30082,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

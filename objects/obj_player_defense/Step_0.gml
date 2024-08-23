@@ -4,7 +4,7 @@
 if(global.pass_thrown and not global.hit_ground){
 	path_end()
 	if(global.offense_caught){ // Have defensive players run to where runner is going instead of to current position
-		if(not global.offensive_player_caught.tackled){
+		if(not global.offensive_player_caught.tackled and not global.touchdown){
 			x = x + ((global.offensive_player_caught.x - x) * player_speed / point_distance(x, y, global.offensive_player_caught.x, global.offensive_player_caught.y))
 			y = y + ((global.offensive_player_caught.y - y) * player_speed / point_distance(x, y, global.offensive_player_caught.x, global.offensive_player_caught.y))
 		}

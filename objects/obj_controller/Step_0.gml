@@ -1,6 +1,6 @@
 /// @description 
 
-if(global.hit_ground or global.defense_caught){
+if(global.hit_ground or global.defense_caught or global.touchdown){
 	if(keyboard_check_pressed(vk_space)){
 		room_restart()
 	}

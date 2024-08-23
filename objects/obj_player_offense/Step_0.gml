@@ -1,7 +1,7 @@
 /// @description 
 
 if(global.play_start and player_not_started_path){
-	path_start(pth_curl, player_path_speed_multiplier, path_action_stop, false)
+	path_start(player_path, player_path_speed_multiplier, path_action_stop, false)
 	player_not_started_path = false
 }
 if(global.pass_thrown){
@@ -13,7 +13,7 @@ if(global.pass_thrown){
 		}
 	}
 }
-if(global.offense_caught and not tackled){
+if(global.offense_caught and not tackled and not global.touchdown){
 	if(ball_caught){
 		y = y - player_speed
 	}

@@ -9,7 +9,12 @@ if(global.hit_ground){
 }
 
 if(global.offense_caught){
-	draw_text(780, 800, "Reception")
+	if(global.touchdown){
+		draw_text(780, 800, "Touchdown")
+	}
+	else{
+		draw_text(780, 800, "Reception")
+	}
 }
 
 if(global.defense_caught){

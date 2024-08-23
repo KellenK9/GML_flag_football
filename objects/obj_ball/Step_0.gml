@@ -40,7 +40,7 @@ else{
 }
 
 if(global.offense_caught){
-	if(not global.offensive_player_caught.tackled){
+	if(not global.offensive_player_caught.tackled and not global.touchdown){
 		x = global.offensive_player_caught.x + x_offset
 		y = global.offensive_player_caught.y + y_offset
 		image_angle = angle
@@ -53,4 +53,8 @@ if(global.defense_caught){
 		y = global.defensive_player_caught.y + y_offset
 		image_angle = angle
 	}
+}
+
+if(y < endzone_pixels){
+	global.touchdown = true
 }

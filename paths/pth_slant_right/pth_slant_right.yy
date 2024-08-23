@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_slant_right",
+  "closed":false,
+  "kind":0,
+  "name":"pth_slant_right",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":191.83337,"y":256.6667,},
+    {"speed":100.0,"x":183.1667,"y":214.00003,},
+    {"speed":100.0,"x":447.1667,"y":126.00003,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
