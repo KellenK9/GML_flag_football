@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_curl",
+  "closed":false,
+  "kind":0,
+  "name":"pth_curl",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":63.239594,"y":103.812485,},
+    {"speed":100.0,"x":63.177094,"y":64.374985,},
+    {"speed":100.0,"x":72.55209,"y":73.999985,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
