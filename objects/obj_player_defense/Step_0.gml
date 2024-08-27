@@ -48,6 +48,18 @@ if(global.play_start and not global.pass_thrown){
 			y = y + ((y_destination - y) * player_speed / point_distance(x, y, x_destination, y_destination))
 		}
 	}
+	if(coverage == "zone-middle" and instance_exists(obj_player_offense)){
+		deepest_y = instance_nearest(x, 0, obj_player_offense).y
+		shallowest_y = instance_nearest(x, room_height, obj_player_offense).y
+		leftmost_x = instance_nearest(0, y, obj_player_offense).x
+		rightmost_x = instance_nearest(room_width, y, obj_player_offense).x
+		y_destination = mean(deepest_y, shallowest_y) - zone_middle_extra_depth
+		x_destination = mean(leftmost_x, rightmost_x)
+		if(player_speed * zone_time_to_move_threshold < point_distance(x, y, x_destination, y_destination)){
+			x = x + ((x_destination - x) * player_speed / point_distance(x, y, x_destination, y_destination))
+			y = y + ((y_destination - y) * player_speed / point_distance(x, y, x_destination, y_destination))
+		}
+	}
 }
 
 
