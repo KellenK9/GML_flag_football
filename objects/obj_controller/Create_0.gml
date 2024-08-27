@@ -22,9 +22,12 @@ offense_x_1 = 100
 offense_x_2 = 400
 
 // Create Defenders
-instance_create_depth(defender_x_1, goal_line_y-defender_yards_off_scrimmage_1-(line_of_scrimmage*pixels_per_yard), 1, obj_player_defense)
-instance_create_depth(defender_x_2, goal_line_y-defender_yards_off_scrimmage_2-(line_of_scrimmage*pixels_per_yard), 1, obj_player_defense)
-instance_create_depth(defender_x_3, goal_line_y-defender_yards_off_scrimmage_1-(line_of_scrimmage*pixels_per_yard), 1, obj_player_defense)
+defender1 = instance_create_depth(defender_x_1, goal_line_y-defender_yards_off_scrimmage_1-(line_of_scrimmage*pixels_per_yard), 1, obj_player_defense)
+defender2 = instance_create_depth(defender_x_2, goal_line_y-defender_yards_off_scrimmage_2-(line_of_scrimmage*pixels_per_yard), 1, obj_player_defense)
+defender3 = instance_create_depth(defender_x_3, goal_line_y-defender_yards_off_scrimmage_1-(line_of_scrimmage*pixels_per_yard), 1, obj_player_defense)
+defender1.coverage = "man"
+defender2.coverage = ""
+defender3.coverage = "man"
 
 //Create QB
 instance_create_depth(qb_x, goal_line_y+qb_yards_off_scrimmage-(line_of_scrimmage*pixels_per_yard), 1, obj_player_quarterback)

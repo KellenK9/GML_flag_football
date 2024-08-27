@@ -27,3 +27,17 @@ if(global.pass_thrown and not global.hit_ground){
 		}
 	}
 }
+
+//Movement before ball thrown
+if(global.play_start and not global.pass_thrown){
+	if(coverage == "man" and instance_exists(obj_player_offense)){
+		closest_receiver = instance_nearest(x, y, obj_player_offense)
+		if(player_speed > coverage_slowdown_coefficient/point_distance(x, y, closest_receiver.x, closest_receiver.y)){
+			x = x + ((closest_receiver.x - x) * (player_speed - (coverage_slowdown_coefficient/point_distance(x, y, closest_receiver.x, closest_receiver.y))) / point_distance(x, y, closest_receiver.x, closest_receiver.y))
+			y = y + ((closest_receiver.y - y) * (player_speed - (coverage_slowdown_coefficient/point_distance(x, y, closest_receiver.x, closest_receiver.y))) / point_distance(x, y, closest_receiver.x, closest_receiver.y))
+		}
+	}
+}
+
+
+
