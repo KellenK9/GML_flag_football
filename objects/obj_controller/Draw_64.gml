@@ -18,5 +18,10 @@ if(global.offense_caught){
 }
 
 if(global.defense_caught){
-	draw_text(750, 800, "Interception")
+	if(global.touchdown_defense){
+		draw_text(780, 800, "Touchdown")
+	}
+	else{
+		draw_text(750, 800, "Interception")
+	}
 }

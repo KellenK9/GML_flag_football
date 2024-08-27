@@ -3,6 +3,8 @@
 image_index = 0
 image_speed = 0
 
+player_speed = 0.8
+
 global.play_start = false
 global.pass_thrown = false
 global.pass_target_x = 0

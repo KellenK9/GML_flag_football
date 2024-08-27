@@ -11,7 +11,8 @@ if(global.pass_thrown){
 		x = x + ((global.pass_target_x - x) * global.throw_speed / point_distance(x, y, global.pass_target_x, global.pass_target_y))
 		y = y + ((global.pass_target_y - y) * global.throw_speed / point_distance(x, y, global.pass_target_x, global.pass_target_y))
 	}
-	if(point_distance(x, y, global.pass_target_x, global.pass_target_y) < global.throw_speed){
+	if(point_distance(x, y, global.pass_target_x, global.pass_target_y) < global.throw_speed and not airtime_concluded){
+		airtime_concluded = true
 		if(place_meeting(x, y, obj_player_offense) and place_meeting(x, y, obj_player_defense)){
 			global.hit_ground = true
 		}
@@ -48,7 +49,7 @@ if(global.offense_caught){
 }
 
 if(global.defense_caught){
-	if(not global.defensive_player_caught.tackled){
+	if(not global.defensive_player_caught.tackled and not global.touchdown_defense){
 		x = global.defensive_player_caught.x + x_offset
 		y = global.defensive_player_caught.y + y_offset
 		image_angle = angle
@@ -57,4 +58,7 @@ if(global.defense_caught){
 
 if(y < endzone_pixels){
 	global.touchdown = true
+}
+if(y > endzone_pixels_defense){
+	global.touchdown_defense = true
 }

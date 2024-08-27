@@ -15,7 +15,9 @@ if(global.pass_thrown and not global.hit_ground){
 	}
 	else{
 		if(global.defense_caught){
-			y = y + player_speed
+			if(not global.defensive_player_caught.tackled and not global.touchdown_defense){
+				y = y + player_speed
+			}
 		}
 		else{
 			if(point_distance(x, y, global.pass_target_x, global.pass_target_y) > player_speed){

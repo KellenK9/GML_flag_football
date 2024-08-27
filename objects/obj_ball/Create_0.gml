@@ -3,6 +3,7 @@
 depth = -10
 
 endzone_pixels = 105
+endzone_pixels_defense = 984
 
 x_original_offset = 7
 y_original_offset = 0
@@ -22,6 +23,8 @@ increasing_angle = true
 
 rotations_per_angle_sway = 2
 
+airtime_concluded = false
+
 
 x_offset = x_original_offset
 y_offset = y_original_offset
@@ -36,3 +39,4 @@ global.hit_ground = false
 global.offense_caught = false
 global.defense_caught = false
 global.touchdown = false
+global.touchdown_defense = false

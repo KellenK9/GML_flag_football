@@ -18,6 +18,15 @@ if(global.offense_caught and not tackled and not global.touchdown){
 		y = y - player_speed
 	}
 }
+if(global.defense_caught){
+	if(not global.defensive_player_caught.tackled and not global.touchdown_defense){
+		x = x + ((obj_ball.x - x) * player_speed / point_distance(x, y, obj_ball.x, obj_ball.y))
+		y = y + ((obj_ball.y - y) * player_speed / point_distance(x, y, obj_ball.x, obj_ball.y))
+		if(place_meeting(x, y, global.defensive_player_caught)){
+			global.defensive_player_caught.tackled = true
+		}
+	}
+}
 
 if(keyboard_check(vk_shift) and not global.pass_thrown){
 	display_route = true
