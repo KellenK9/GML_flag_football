@@ -14,7 +14,25 @@ if(global.pass_thrown){
 	if(point_distance(x, y, global.pass_target_x, global.pass_target_y) < global.throw_speed and not airtime_concluded){
 		airtime_concluded = true
 		if(place_meeting(x, y, obj_player_offense) and place_meeting(x, y, obj_player_defense)){
-			global.hit_ground = true
+			receiver = instance_place(x, y, obj_player_offense)
+			defender = instance_place(x, y, obj_player_defense)
+			rand_num = random_range(0, 1)
+			if(rand_num < receiver.contested_catch - defender.contested_catch){
+				global.contested_catch = true
+				global.offense_caught = true
+				global.pass_caught = true
+				global.offensive_player_caught = instance_place(x, y, obj_player_offense)
+				global.offensive_player_caught.ball_caught = true
+			}
+			if(rand_num < defender.contested_catch - receiver.contested_catch){
+				global.contested_catch = true
+				global.defense_caught = true
+				global.pass_caught = true
+				global.defensive_player_caught = instance_place(x, y, obj_player_defense)
+			}
+			if(rand_num >= receiver.contested_catch - defender.contested_catch and rand_num >= defender.contested_catch - receiver.contested_catch){
+				global.hit_ground = true
+			}
 		}
 		else{
 			if(place_meeting(x, y, obj_player_offense)){

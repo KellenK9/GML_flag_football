@@ -40,3 +40,4 @@ global.offense_caught = false
 global.defense_caught = false
 global.touchdown = false
 global.touchdown_defense = false
+global.contested_catch = false

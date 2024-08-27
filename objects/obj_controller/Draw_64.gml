@@ -13,7 +13,12 @@ if(global.offense_caught){
 		draw_text(780, 800, "Touchdown")
 	}
 	else{
-		draw_text(780, 800, "Reception")
+		if(global.contested_catch){
+			draw_text(650, 800, "Contested Reception")
+		}
+		else{
+			draw_text(780, 800, "Reception")
+		}
 	}
 }
 
@@ -22,6 +27,11 @@ if(global.defense_caught){
 		draw_text(780, 800, "Touchdown")
 	}
 	else{
-		draw_text(750, 800, "Interception")
+		if(global.contested_catch){
+			draw_text(620, 800, "Contested Interception")
+		}
+		else{
+			draw_text(750, 800, "Interception")
+		}
 	}
 }
