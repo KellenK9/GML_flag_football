@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_scrimmage_wide",
+  "%Name":"obj_first_down",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_scrimmage_wide",
+  "name":"obj_first_down",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_scrimmage_2",
-    "path":"sprites/spr_scrimmage_2/spr_scrimmage_2.yy",
+    "name":"spr_first_down",
+    "path":"sprites/spr_first_down/spr_first_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

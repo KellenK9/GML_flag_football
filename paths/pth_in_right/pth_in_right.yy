@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_in_right",
+  "closed":false,
+  "kind":0,
+  "name":"pth_in_right",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":62.112602,"y":350.72073,},
+    {"speed":100.0,"x":62.112602,"y":284.05408,},
+    {"speed":100.0,"x":382.8333,"y":283.15317,},
+    {"speed":100.0,"x":414.36487,"y":229.09909,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

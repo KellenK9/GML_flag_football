@@ -31,3 +31,50 @@ if(global.pass_thrown){
 		}
 	}
 }
+
+//Adjust points when events happen
+if(global.play_start and not global.pass_thrown){
+	points_ready_to_adjust = true
+}
+if(points_ready_to_adjust){
+	if(global.hit_ground){
+		global.arcade_score = global.arcade_score - 10
+		points_ready_to_adjust = false
+	}
+	if(global.offense_caught){
+		if(global.touchdown){
+			global.arcade_score = global.arcade_score + 2000
+			points_ready_to_adjust = false
+		}
+		else{
+			if(global.offensive_player_caught.tackled){
+				if(global.contested_catch){
+					global.arcade_score = global.arcade_score + 150
+					points_ready_to_adjust = false
+				}
+				else{
+					global.arcade_score = global.arcade_score + 100
+					points_ready_to_adjust = false
+				}
+			}
+		}
+	}
+	if(global.defense_caught){
+		if(global.touchdown_defense){
+			global.arcade_score = global.arcade_score - 1000
+			points_ready_to_adjust = false
+		}
+		else{
+			if(global.defensive_player_caught.tackled){
+				if(global.contested_catch){
+					global.arcade_score = global.arcade_score - 250
+					points_ready_to_adjust = false
+				}
+				else{
+					global.arcade_score = global.arcade_score - 500
+					points_ready_to_adjust = false
+				}
+			}
+		}
+	}
+}

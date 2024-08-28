@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_fade_left",
+  "closed":false,
+  "kind":0,
+  "name":"pth_fade_left",
+  "parent":{
+    "name":"Paths",
+    "path":"folders/Paths.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":317.3295,"y":382.87277,},
+    {"speed":100.0,"x":287.47583,"y":352.53943,},
+    {"speed":100.0,"x":286.28885,"y":286.6858,},
+    {"speed":100.0,"x":224.63843,"y":95.880905,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
